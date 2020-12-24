@@ -15,30 +15,31 @@
         </ImageView>
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inptlog"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inptlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="25dp"
+        app:boxStrokeColor="#4254BC"
+        app:errorEnabled="true"
+        app:hintTextColor="#4254BC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="270dp"
-            android:layout_marginRight="25dp"
-            app:boxStrokeColor="#4254BC"
-            app:hintTextColor="#4254BC"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:background="#FFFFFF"
+            android:hint="Input Login Or E-Mail">
 
+        </com.google.android.material.textfield.TextInputEditText>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/EditLogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FFFFFF"
-                android:hint="Input login">
-
-            </com.google.android.material.textfield.TextInputEditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inptpass"

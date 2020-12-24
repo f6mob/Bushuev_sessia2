@@ -4,15 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    android:background="@drawable/content">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="37dp"
-        android:layout_height="37dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+        app:srcCompat="@drawable/icons"
+        android:clickable="true"
+        android:onClick="Menu">
+    </ImageView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

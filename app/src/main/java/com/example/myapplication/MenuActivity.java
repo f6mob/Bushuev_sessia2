@@ -5,17 +5,32 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity {
+
+
+    TextView mail;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_menu);
+        mail = findViewById(R.id.mail);
     }
 
-    public void Menu (View view){
-        Intent intent = new Intent(this,MenuActivity.class );
-        startActivity(intent);
+    public void openHistory(View view){
+
     }
+
+    public void openSettings(View view) {
+
+    }
+
+
+
+
+
+
 }

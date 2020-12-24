@@ -23,8 +23,7 @@ public class SignInActivity extends AppCompatActivity {
 
         login_layout = findViewById(R.id.inptlog);
         inputLogin = findViewById(R.id.EditLogin);
-
-
+        inputLogin.addTextChangedListener(textWatcher);
     }
 
     public void CreateNewAccount(View view){
@@ -46,6 +45,7 @@ public class SignInActivity extends AppCompatActivity {
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
             if(s.toString().isEmpty()){
+                login_layout.setError("Eto pole ne dozno bit pustim");
                 login_layout.setErrorEnabled(true);
             }
 
@@ -53,7 +53,7 @@ public class SignInActivity extends AppCompatActivity {
 
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+            login_layout.setErrorEnabled(false);
         }
 
         @Override
